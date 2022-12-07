@@ -10,6 +10,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     RedesComponent,
     BannerComponent,
     AboutMeComponent,
-    ExperienciaComponent
+    ExperienciaComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
