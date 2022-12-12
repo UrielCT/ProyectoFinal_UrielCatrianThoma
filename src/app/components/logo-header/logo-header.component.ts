@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logo-header',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./logo-header.component.css']
 })
 export class LogoHeaderComponent {
+
+  constructor(private router:Router) { }
+
+  ngOnInit(): void{
+
+  }
+
+  login(){
+    this.router.navigate(['/login']);
+  }
 
 }
