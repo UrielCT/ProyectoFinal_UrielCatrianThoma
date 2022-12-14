@@ -13,7 +13,8 @@ export class AboutMeComponent implements OnInit {
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(res => {this.persona = res})
+    this.personaService.getPersona().subscribe(res => {this.persona = res});
+    console.log( "persona: " + this.persona.nombre)
   }
 
 }

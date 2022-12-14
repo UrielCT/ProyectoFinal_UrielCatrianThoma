@@ -12,7 +12,8 @@
         <div class="redes">
             <a href=""><img src="../../../assets/github.png" alt="github"></a>
             <a href=""><img src="../../../assets/linkedin.png" alt="linkedin"></a>
-            <button type="button" class="btn btn-outline-light" (click)="login()">Login</button>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
         </div>
     </div>
    
