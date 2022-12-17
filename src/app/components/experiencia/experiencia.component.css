@@ -2,10 +2,51 @@
     padding: 20px;
 }
 
-div{
+/*div{
     background: #a1b5cb;
-}
+}*/
 
 h1, h3{
     display: inline;
 }
+
+
+
+
+
+/* Pantalla de pc*/
+
+@media (min-width: 576px){
+
+    
+    .title_container{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+
+}
+
+
+/* Pantalla de celular*/
+
+@media (max-width: 575px){
+
+    .title_container{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .title_container, .btn{
+        margin-left: 20px;
+    }
+}
+

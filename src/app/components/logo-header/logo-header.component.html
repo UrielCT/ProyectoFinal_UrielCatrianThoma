@@ -1,19 +1,25 @@
 <div class="row">
     <div class="container">
 
-        <div class="logo">
+        <div>
             <img 
             src="../../../assets/APLogo.png" 
-            alt="Logo Argentina Programa"
+            alt="Logo"
             id="logo_arg_prog">
         </div>
 
 
-        <div class="redes">
-            <a href=""><img src="../../../assets/github.png" alt="github"></a>
-            <a href=""><img src="../../../assets/linkedin.png" alt="linkedin"></a>
-            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
-            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+        <div class="nav">
+            <div class="redes">
+                <a class="ic1" href=""><img src="../../../assets/github.png" alt="github"></a>
+                <a class="ic2" href=""><img src="../../../assets/linkedin.png" alt="linkedin"></a>
+            </div>
+            
+            <div class="botones">
+                <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">LOGIN</button>
+                <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">LOGOUT</button>
+            </div>
+                
         </div>
     </div>
    
