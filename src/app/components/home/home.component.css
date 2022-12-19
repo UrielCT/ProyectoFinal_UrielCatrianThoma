@@ -1,7 +1,7 @@
 
 #home_container{
     color: #fff;
-    background: linear-gradient(45deg,rgb(184, 2, 2),blue,rgb(3, 165, 3),black);
+    background: linear-gradient(45deg,rgb(184, 2, 2),blue,rgb(3, 165, 3) ,black);
     background-size: 500%  500%; 
     animation: cambiar 15s ease-in-out infinite;
 }
