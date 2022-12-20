@@ -36,8 +36,9 @@
 }
 
 
-h1, h3, h6{
+h1{
     display: inline;
+    color: aliceblue;
 }
 
 

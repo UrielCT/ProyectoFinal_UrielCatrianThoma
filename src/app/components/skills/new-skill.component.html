@@ -3,11 +3,11 @@
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombre">Nueva Skill</label>
+                    <h6 for="nombre">Nueva Skill</h6>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
                 </div>
                 <div class="form-group">
-                    <label for="porcentaje">Porcentaje</label>
+                    <h6 for="porcentaje">Porcentaje</h6>
                     <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
                 </div>
                 <button class="btn btn-primary">

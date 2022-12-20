@@ -3,20 +3,20 @@
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombre">Nombre de la empresa</label>
+                    <h6 for="nombre">Nombre de la empresa</h6>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
                 </div>
                 <div class="form-group">
-                    <label for="apellido">Descripción del empleo</label>
+                    <h6 for="apellido">Descripción del empleo</h6>
                     <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcion">Descripción</label>
+                    <h6 for="descripcion">Descripción</h6>
                     <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="imagen">Descripción del empleo</label>
+                    <h6 for="imagen">Descripción del empleo</h6>
                     <input 
                     type="file" 
                     class="form-control" 
@@ -29,7 +29,7 @@
                 </div>
                 <br>
                 <button class="btn btn-primary">
-                    Editar persona
+                    Editar
                 </button>
             </form>
         </div>

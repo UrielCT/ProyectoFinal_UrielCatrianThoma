@@ -3,23 +3,23 @@
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombre">Nombre del proyecto</label>
+                    <h6 for="nombre">Nombre del proyecto</h6>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcion">Descripción del proyecto</label>
+                    <h6 for="descripcion">Descripción del proyecto</h6>
                     <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required>
                 </div>
                 <div class="form-group">
-                    <label for="fechaReali">Fecha de creación</label>
+                    <h6 for="fechaReali">Fecha de creación</h6>
                     <input type="text" class="form-control" id="fechaReali" name="fechaReali" [(ngModel)]="fechaReali" required>
                 </div>
                 <div class="form-group">
-                    <label for="link">Link del proyecto</label>
+                    <h6 for="link">Link del proyecto</h6>
                     <input type="text" class="form-control" id="link" name="link" [(ngModel)]="link" required>
                 </div>
                 <div class="form-group">
-                    <label for="imagen">Imagen</label>
+                    <h6 for="imagen">Imagen</h6>
                     <input type="text" class="form-control" id="imagen" name="imagen" [(ngModel)]="imagen" required>
                 </div>
                 <button class="btn btn-primary">
