@@ -8,8 +8,9 @@ import { ServExperienciaService } from 'src/app/service/serv-experiencia.service
   templateUrl: './edit-experiencia.component.html',
   styleUrls: ['./edit-experiencia.component.css']
 })
+
 export class EditExperienciaComponent implements OnInit {
-  expLab: Experiencia = new Experiencia("","");
+  expLab: Experiencia = new Experiencia("","","","");
 
   constructor(private experienciaServ: ServExperienciaService,
               private activatedRouter: ActivatedRoute,

@@ -95,10 +95,12 @@
             "scripts": []
           }
         }
+        
       }
     }
   },
   "cli": {
-    "analytics": "b827deba-d2d8-4558-ad28-408add0818d1"
+    "analytics": false
   }
+  
 }

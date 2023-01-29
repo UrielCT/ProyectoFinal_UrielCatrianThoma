@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Experiencia } from '../model/experiencia';
+import {Firestore,collection, addDoc } from '@angular/fire/firestore';
+
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +11,18 @@ import { Experiencia } from '../model/experiencia';
 export class ServExperienciaService {
   URL = 'http://localhost:8080/explab/'
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(
+    private httpClient:HttpClient, 
+    private firestore: Firestore) 
+  { }
+
+
+    agregarExperiencia(experiencia:Experiencia){
+      const experienciaRef = collection(this.firestore, 'experiencia');
+      return addDoc(experienciaRef, experiencia);
+    }
+
+
 
   public lista(): Observable<Experiencia[]> {
     return this.httpClient.get<Experiencia[]>(this.URL + 'lista');
@@ -30,5 +43,4 @@ export class ServExperienciaService {
   public delete(id: number): Observable<any>{
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   }
-
 }

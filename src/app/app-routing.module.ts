@@ -14,6 +14,7 @@ import { NewSkillComponent } from './components/skills/new-skill.component';
 
 const routes: Routes = [
   {path: '',component: HomeComponent},
+  
   {path: 'login',component: LoginComponent},
 
   {path: 'nuevaexp', component: NewExperienciaComponent},
@@ -28,10 +29,9 @@ const routes: Routes = [
   {path: 'editacercade/:id', component: EditAboutmeComponent},
 
   {path: 'nuevopro', component: NewProyectoComponent},
-  {path: 'editpro/:id', component: EditProyectoComponent}
+  {path: 'editpro/:id', component: EditProyectoComponent},
 
-  
-
+ 
   /*{path: 'home',component: HomeComponent},
   {path: 'login',component: LoginComponent},
   {path: '', redirectTo: 'login', pathMatch: 'full'}*/

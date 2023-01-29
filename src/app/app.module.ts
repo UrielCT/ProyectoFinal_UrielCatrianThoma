@@ -29,6 +29,11 @@ import { NewSkillComponent } from './components/skills/new-skill.component';
 import { EditAboutmeComponent } from './components/about-me/edit-aboutme.component';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+
+import { AngularFireModule } from '@angular/fire/compat'
 
 
 @NgModule({
@@ -55,7 +60,6 @@ import { EditProyectoComponent } from './components/proyectos/edit-proyecto.comp
     EditAboutmeComponent,
     NewProyectoComponent,
     EditProyectoComponent
-  
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,10 @@ import { EditProyectoComponent } from './components/proyectos/edit-proyecto.comp
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
   ],
   providers: [
     interceptorProvider
